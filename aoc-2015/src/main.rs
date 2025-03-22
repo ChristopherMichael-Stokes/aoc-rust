@@ -17,12 +17,10 @@ fn main() {
             .iter()
             .any(|&item| args[2].contains(item));
 
-    let problem: &String = &args[1];
-    if problem == "day01" {
-        day01::solve(use_dummy_inputs);
-    } else if problem == "day02" {
-        day02::solve(use_dummy_inputs);
-    } else {
-        println!("Solutions not yet implemented for \"{}\"", problem);
+    match args[1].as_str() {
+        "day01" => day01::solve(use_dummy_inputs),
+        "day02" => day02::solve(use_dummy_inputs),
+        _ => eprintln!("Solutions not yet implemented for \"{}\"", args[1]),
     }
+    
 }
