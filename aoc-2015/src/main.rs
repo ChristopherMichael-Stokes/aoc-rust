@@ -20,7 +20,8 @@ fn main() {
     match args[1].as_str() {
         "day01" => day01::solve(use_dummy_inputs),
         "day02" => day02::solve(use_dummy_inputs),
+        "day03" => day03::solve(use_dummy_inputs),
+        "day04" => day04::solve(use_dummy_inputs),
         _ => eprintln!("Solutions not yet implemented for \"{}\"", args[1]),
     }
-    
 }

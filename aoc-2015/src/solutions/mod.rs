@@ -1,3 +1,6 @@
+mod utils;
+
 pub mod day01;
 pub mod day02;
-mod utils;
+pub mod day03;
+pub mod day04;
