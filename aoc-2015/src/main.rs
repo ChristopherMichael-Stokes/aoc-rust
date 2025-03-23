@@ -22,6 +22,7 @@ fn main() {
         "day02" => day02::solve(use_dummy_inputs),
         "day03" => day03::solve(use_dummy_inputs),
         "day04" => day04::solve(use_dummy_inputs),
+        "day05" => day05::solve(use_dummy_inputs),
         _ => eprintln!("Solutions not yet implemented for \"{}\"", args[1]),
     }
 }
